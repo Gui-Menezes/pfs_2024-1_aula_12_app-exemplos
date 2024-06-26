@@ -1,6 +1,7 @@
 import Card from './components/Card.jsx';
 import Hello from './components/Hello.jsx';
 import ListCards from './components/ListCards.jsx';
+import TabelaProdutos from './components/TabelaProdutos.jsx';
 import listaProdutos from './data/Produto.json'
 
 
@@ -29,6 +30,8 @@ function App() {
 
     {/* Incluindo cards por componente */}
       <ListCards lista={listaProdutos} />
+    
+    <TabelaProdutos lista={listaProdutos}></TabelaProdutos>
     </>
   )
 }
