@@ -3,6 +3,8 @@ import Hello from './components/Hello.jsx';
 import ListCards from './components/ListCards.jsx';
 import TabelaProdutos from './components/TabelaProdutos.jsx';
 import listaProdutos from './data/Produto.json'
+import Counter from './components/Counter.jsx';
+import ChangeColor from './components/ChangeColor.jsx';
 
 
 function App() {
@@ -15,6 +17,11 @@ function App() {
     <Hello nome="Ciclano"/>
     <Hello />
 
+    <ChangeColor />
+    <br />  
+    <br />  
+
+    <Counter />
     {/* Incluindo card manualmente */}
     <Card titulo="Produto 1">
       <h3>Descrição</h3>
@@ -32,6 +39,7 @@ function App() {
       <ListCards lista={listaProdutos} />
     
     <TabelaProdutos lista={listaProdutos}></TabelaProdutos>
+
     </>
   )
 }
